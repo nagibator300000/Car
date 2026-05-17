@@ -36,9 +36,9 @@ def on_mouse_release(x, y, buttons, modifiers):
 @window.event
 def on_key_press(symbol,modifiers):
     if symbol ==key.F3:
-        road.save("./","save")
+        road.save("./saves/","save")
     if symbol ==key.F4:
-        road.load("./","save")
+        road.load("./saves/","save")
     if symbol == key.TAB:
         road.switch()
 

@@ -11,7 +11,7 @@ worldObjects = []
 
 class Car:
     def __init__(self,x,y,objList):
-        image = pyglet.image.load("car.png")
+        image = pyglet.image.load("./sprites/car.png")
         image.anchor_x=image.width//2
         image.anchor_y=image.height//2
         self.sprite = pyglet.sprite.Sprite(
@@ -27,7 +27,7 @@ class Car:
         
         self.vector = np.zeros(2)
 
-        # self.rotation_speed=6
+        self.rotation_speed=0
 
         self.speed = 0
         self.max_speed=10
